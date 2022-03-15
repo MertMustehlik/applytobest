@@ -11,6 +11,10 @@ Route::get('/technology',[FrontController::class,'technology'])->name('technolog
 Route::get('/contact',[FrontController::class,'contact'])->name('contact');
 Route::post('/contact-post',[App\Http\Controllers\ContactController::class,'add'])->name('contact-post');
 
+Route::match(['get', 'post'], 'register', function () {
+    return abort(403, 'Forbidden');
+})->name('register');
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
