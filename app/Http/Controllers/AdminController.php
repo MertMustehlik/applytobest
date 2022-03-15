@@ -11,7 +11,7 @@ class AdminController extends Controller
         return view('admin.include.admin-home');
     }
     public function contact(){
-        $datas = Contact::get();
+        $datas = Contact::get()->reverse();
         return view('admin.include.contact',compact('datas'));
     }
 }

@@ -2,8 +2,8 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
             <a href="{{asset('admin/index3.html')}}" class="brand-link">
-                <img src="{{asset('admin/dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-                <span class="brand-text font-weight-light">AdminLTE 3</span>
+                <img src="{{asset('assets/images/apply-logo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8; background:#fff;">
+                <span class="brand-text font-weight-light">Apply to Best</span>
             </a>
 
             <!-- Sidebar -->
@@ -46,9 +46,7 @@
                         <li class="nav-item">
                             <a href="{{route('admin-contact')}}" class="nav-link {{Route::is('admin-contact')? 'active' : ''}}">
                                 <i class="nav-icon fas fa-book"></i>
-                                <p>
-                                    Contact
-                                </p>
+                                <p>Contact Table</p>
                             </a>
                         </li>
                     </ul>
