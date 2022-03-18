@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="{{asset('admin/plugins/fontawesome-free/css/all.min.css')}}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{asset('admin/dist/css/adminlte.min.css')}}">
+    <style>
+        .alert-success {
+            color: #155724 !important;
+            background-color: #d4edda !important;
+            border-color: #c3e6cb !important;
+        }
+    </style>
     @yield('css')
 </head>
 
@@ -20,7 +27,7 @@
     <div class="wrapper">
         @include('admin.data.header')
         @include('admin.data.side')
-       
+
         @yield('master')
 
         @include('admin.data.footer')

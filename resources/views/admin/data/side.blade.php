@@ -1,7 +1,7 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-            <a href="{{asset('admin/index3.html')}}" class="brand-link">
+            <a href="https://www.applytobest.com/" class="brand-link">
                 <img src="{{asset('assets/images/apply-logo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8; background:#fff;">
                 <span class="brand-text font-weight-light">Apply to Best</span>
             </a>
@@ -16,7 +16,7 @@
                     </div>
                     @endif
                     <div class="info">
-                        <a href="#" class="d-block">{{ Auth::user()->name }}</a>
+                        <a href="{{route('profile.show')}}" class="d-block">{{ Auth::user()->name }}</a>
                     </div>
                 </div>
 
@@ -47,6 +47,12 @@
                             <a href="{{route('admin-contact')}}" class="nav-link {{Route::is('admin-contact')? 'active' : ''}}">
                                 <i class="nav-icon fas fa-book"></i>
                                 <p>Contact Table</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{route('admin-settings')}}" class="nav-link {{Route::is('admin-settings')? 'active' : ''}}">
+                                <i class="nav-icon fas fa-book"></i>
+                                <p>Settings</p>
                             </a>
                         </li>
                     </ul>

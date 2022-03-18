@@ -22,4 +22,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 Route::middleware(['auth:sanctum', 'verified'])->prefix('adminpanel')->group(function () {
     Route::get('/',[AdminController::class,'home'])->name('admin-home');
     Route::get('/contact',[AdminController::class,'contact'])->name('admin-contact');
+    Route::get('/settings',[AdminController::class,'settings'])->name('admin-settings');
+    Route::post('/settings-post',[AdminController::class,'settingsUpdate'])->name('admin-settings-post');
+    Route::get('/settings-durum/{name}/{id}',[AdminController::class,'settingsDurum'])->name('admin-settings-durum');
 });

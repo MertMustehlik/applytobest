@@ -1,5 +1,5 @@
 @extends('admin.admin-temp')
-@section('title') @endsection
+@section('title') Admin Panel/Contact - Apply @endsection
 @section('css')
 <!-- DataTables -->
 <link rel="stylesheet" href="{{asset('admin/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css')}}">

@@ -6,8 +6,12 @@
             </div>
             <div class="footer-item">
                 <p class="footer-title">BECOME A CLIENT</p>
-                <p><a href="tel:+90506 369 3030">+90506 369 3030</a></p>
-                <p><a href="mailto:info@applytobest.com">info@applytobest.com</a></p>
+                @if($settings->phoneDurum == 1)
+                <p><a href="tel:{{$settings->phone}}">{{$settings->phone}}</a></p>
+                @endif
+                @if($settings->mailDurum == 1)
+                <p><a href="mailto:{{$settings->mail}}">{{$settings->mail}}</a></p>
+                @endif
             </div>
             <div class="footer-item">
                 <div class="footer-menu">
@@ -51,9 +55,17 @@
     </div>
     <div class="footer-social">
         <ul>
-            <li><a href="https://www.linkedin.com/company/apply-digital-creative-agency/about/" target="_blank"><img src="{{asset('assets/images/social/linkedin.png')}}"></a></li>
-            <li><a href="https://wa.me/905063693030" target="_blank"><img src="{{asset('assets/images/social/wp.png')}}"></a></li>
-            <li><a href="#"><img src="{{asset('assets/images//social/insta.png')}}"></a></li>
+            @if($settings->linkedinDurum == 1))
+            <li><a href="{{$settings->linkedin}}" target="_blank"><img src="{{asset('assets/images/social/linkedin.png')}}"></a></li>
+            @endif
+            @if($settings->whatsappDurum == 1)
+            <li><a href="https://wa.me/{{$settings->whatsapp}}" target="_blank"><img src="{{asset('assets/images/social/wp.png')}}"></a></li>
+            @endif
+            @if($settings->instagramDurum == 1)
+            <li><a href="{{$settings->instagram}}"><img src="{{asset('assets/images//social/insta.png')}}"></a></li>
+            @endif
+            
+            
         </ul>
     </div>
     <!-- ---- Footer end ---- -->

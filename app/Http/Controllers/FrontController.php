@@ -3,9 +3,13 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Settings;
 
 class FrontController extends Controller
 {
+    function __construct(){
+        view()->share('settings',Settings::find(1));   
+    }
     public function branding(){
         return view('include.branding');
     }

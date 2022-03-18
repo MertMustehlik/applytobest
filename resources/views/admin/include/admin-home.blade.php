@@ -1,5 +1,5 @@
 @extends('admin.admin-temp')
-@section('title') @endsection
+@section('title') Admin Panel/Dashboard - Apply @endsection
 @section('css')
 @endsection
 
@@ -11,7 +11,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Dashboard Page</h1>
+                    <h1>Dashboard</h1>
                 </div>
             </div>
         </div><!-- /.container-fluid -->
@@ -32,7 +32,7 @@
                 </div>
             </div>
             <div class="card-body">
-                Start creating your amazing application!
+                Welcome
             </div>
             <!-- /.card-body -->
             <div class="card-footer">
