@@ -62,7 +62,7 @@
             <li><a href="https://wa.me/{{$settings->whatsapp}}" target="_blank"><img src="{{asset('assets/images/social/wp.png')}}"></a></li>
             @endif
             @if($settings->instagramDurum == 1)
-            <li><a href="{{$settings->instagram}}"><img src="{{asset('assets/images//social/insta.png')}}"></a></li>
+            <li><a href="{{$settings->instagram}}" target="_blank"><img src="{{asset('assets/images//social/insta.png')}}"></a></li>
             @endif
             
             

@@ -400,6 +400,9 @@ p{
     .h5{
         font-size: 14px;
     }
+    .menu-item a{
+        font-size: 11px;
+    }
 }
 @media only screen and (min-width: 200px) and (max-width:576px){
     .container{
@@ -414,14 +417,19 @@ p{
 }
 @media only screen and (max-width:520px){
     .text-title-1{
-        font-size: 25px;
+        font-size: 20px;
     }
     .text-title-2{
-        font-size: 15px;
+        font-size: 13px;
     }
     .footer-item:nth-child(3){
         display: grid;
         grid-template-columns: repeat(1, auto);
+    }
+}
+@media only screen and (max-width:380px){
+    .header, .header video{
+        height: 850px;
     }
 }
 /* |---mobile-view-end---| */ 

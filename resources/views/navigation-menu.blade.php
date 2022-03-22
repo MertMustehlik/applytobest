@@ -6,7 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="{{ route('profile.show') }}">
-                        <x-jet-application-mark class="block h-9 w-auto" />
+                    <img src="{{asset('assets/images/apply-logo-loader.png')}}" width="60px" class="sm:rounded-lg shadow-md" alt="apply-logo" style="background-image: linear-gradient(346deg, rgba(0,0,0,1) 0%, rgba(80,80,80,1) 47%, rgba(0,0,0,1) 100%);">
                     </a>
                 </div>
             </div>

@@ -18,6 +18,9 @@
             background-color: #d4edda !important;
             border-color: #c3e6cb !important;
         }
+        .btn-outline-dark:hover{
+            color: #fff !important;
+        }
     </style>
     @yield('css')
 </head>

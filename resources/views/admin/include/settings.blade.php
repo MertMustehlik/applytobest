@@ -1,12 +1,6 @@
 @extends('admin.admin-temp')
 @section('title') Admin Panel/Settings - Apply @endsection
 @section('css')
-<!-- Google Font: Source Sans Pro -->
-<link rel="stylesheet" href="{{asset('admin/https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback')}}">
-<!-- Font Awesome -->
-<link rel="stylesheet" href="{{asset('admin/plugins/fontawesome-free/css/all.min.css')}}">
-<!-- Theme style -->
-<link rel="stylesheet" href="{{asset('admin/dist/css/adminlte.min.css')}}">
 @endsection
 
 @section('master')
@@ -125,14 +119,8 @@
 @endsection
 
 @section('js')
-<!-- jQuery -->
-<script src="{{asset('admin/plugins/jquery/jquery.min.js')}}"></script>
-<!-- Bootstrap 4 -->
-<script src="{{asset('admin/plugins/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <!-- bs-custom-file-input -->
 <script src="{{asset('admin/plugins/bs-custom-file-input/bs-custom-file-input.min.js')}}"></script>
-<!-- AdminLTE App -->
-<script src="{{asset('admin/dist/js/adminlte.min.js')}}"></script>
 <!-- Page specific script -->
 <script>
     $(function() {

@@ -10,9 +10,18 @@
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('profile.show') }}" role="button">
+                    <a class="nav-link btn btn-outline-dark" href="{{ route('profile.show') }}" role="button">
                         Admin Profile
                     </a>
+                </li>
+                &nbsp&nbsp
+                <li class="nav-item">
+                    <form method="POST" action="{{ route('logout') }}" x-data>
+                        @csrf
+                        <button type="submit" href="{{ route('logout') }}" class="nav-link btn btn-outline-dark" role="button" @click.prevent="$root.submit();">
+                            {{ __('Log Out') }}
+                        </button>
+                    </form>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" data-widget="fullscreen" href="#" role="button">

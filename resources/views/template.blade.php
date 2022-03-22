@@ -40,7 +40,6 @@
     <script src="{{asset('assets/js/theme.js')}}"></script>
     <!-- Script End-->
     @yield('js')
-
 </body>
 
 </html>
