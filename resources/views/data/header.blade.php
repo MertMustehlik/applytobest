@@ -2,7 +2,7 @@
 <header class="header">
     <div class="header-kap d-flex justify-content-center" style="height:700px; width:100%; position:absolute;">
         <div class="header-logo">
-            <img src="{{asset('assets/images/apply-logo.png')}}" alt="header-apply-logo" width="264px" height="264px">
+            <a href="{{route('branding')}}"><img src="{{asset('assets/images/apply-logo.png')}}" alt="header-apply-logo" width="264px" height="264px"></a>
             <p class="header-logo-text">DIGITAL CREATIVE AGENCY</p>
         </div>
         <div class="header-text" style="position:absolute;">

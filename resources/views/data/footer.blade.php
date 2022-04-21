@@ -2,7 +2,9 @@
     <div class="footer">
         <div class="footer-container">
             <div class="footer-item">
-                <span class="footer-logo"><img src="{{asset('assets/images/apply-logo-loader.png')}}" alt="apply-logo"></span>
+                <span class="footer-logo">
+                    <a href="{{route('branding')}}"><img src="{{asset('assets/images/apply-logo-loader.png')}}" alt="apply-logo"></a>
+                </span>
             </div>
             <div class="footer-item">
                 <p class="footer-title">BECOME A CLIENT</p>
